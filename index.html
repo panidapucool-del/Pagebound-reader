@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="theme-color" content="#F4F1EA" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#F4F1EA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Pagebound Reader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <style>
@@ -131,8 +130,8 @@
     body.mode-secure .corner-sensor{pointer-events:auto}
     @media(max-width:640px){.dashboard-scroll{grid-template-columns:1fr}.right-zone{border-left:none;border-top:1px solid var(--border)}.hero-showcase{grid-template-columns:1fr}.open-book-3d-wrap{width:100%}}
   </style>
-</head>
-<body>
+<link rel="manifest" href="./manifest.json"></head>
+<body class="">
   <canvas id="ambientFxCanvas"></canvas>
   <div class="corner-sensor l" id="panicL"></div>
   <div class="corner-sensor r" id="panicR"></div>
@@ -141,7 +140,7 @@
     <aside class="nav-rail">
       <button class="hand-logo-btn" id="handTriggerBtn" title="Pagebound">
         <span class="dot-ind"></span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"></path><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"></path><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"></path><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path></svg>
       </button>
       <div class="rail-icons">
         <button class="rail-btn active" id="homeRailBtn" title="Library">🏠</button>
@@ -155,7 +154,7 @@
     <div class="dashboard-scroll">
       <main class="left-zone">
         <div class="top-bar-row">
-          <div class="search-bar"><span>🔍</span><input type="text" id="searchInput" placeholder="Search title, author..." /></div>
+          <div class="search-bar"><span>🔍</span><input type="text" id="searchInput" placeholder="Search title, author..."></div>
           <button class="tactile-btn surface" id="themePillBtn" style="padding:7px 13px;font-size:11.5px;">✨ Theme: Pagebound</button>
         </div>
         <div class="hero-showcase">
@@ -165,7 +164,7 @@
             <div class="hero-actions">
               <button class="tactile-btn primary" id="startReadingBtn">Start reading ↗</button>
               <button class="tactile-btn secondary" id="uploadBookBtn">+ Upload Books</button>
-              <input type="file" id="fileInput" accept=".pdf,.epub,.cbz,.zip" multiple hidden />
+              <input type="file" id="fileInput" accept=".pdf,.epub,.cbz,.zip" multiple="" hidden="">
             </div>
           </div>
           <div class="open-book-3d-wrap">
@@ -176,7 +175,7 @@
           </div>
         </div>
         <section>
-          <div class="shelf-header"><h2 id="shelfHeading">Library Shelves</h2><span style="font-size:11.5px;color:var(--text-muted);" id="bookCountLabel">Double-tap cover to open</span></div>
+          <div class="shelf-header"><h2 id="shelfHeading">Library Shelves</h2><span style="font-size:11.5px;color:var(--text-muted);" id="bookCountLabel">4 books • Double-tap cover</span></div>
           <div class="books-row" id="booksGrid"></div>
         </section>
       </main>
@@ -190,12 +189,12 @@
           <h2 id="activeBookTitle">Crimson Guild Chronicles</h2>
           <div class="page-counter"><span class="cur" id="activeCurPage">1</span> / <span id="activeTotalPages">4</span> pages</div>
           <p class="pinned-desc" id="activeBookDesc">A quiet personal bookshelf for light novels, manga volumes, and study PDFs. Reading position and bookmarks save automatically.</p>
-          <div class="pinned-author" id="activeBookAuthor">– Volume IV</div>
+          <div class="pinned-author" id="activeBookAuthor">– Vol. IV</div>
         </div>
         <div class="schedule-box">
-          <h3><span>Schedule Reading</span><span style="font-size:11.5px;color:var(--text-muted);" id="monthLabel"></span></h3>
+          <h3><span>Schedule Reading</span><span style="font-size:11.5px;color:var(--text-muted);" id="monthLabel">Nov 2026</span></h3>
           <div class="week-grid" id="weekStrip"></div>
-          <div class="schedule-status" id="scheduleStatusText">🎯 Today's Goal: Read 25 pages</div>
+          <div class="schedule-status" id="scheduleStatusText">🎯 Active Goal: Read 25 pages of <strong>Crimson Guild Chronicles</strong></div>
         </div>
         <div class="notes-box">
           <h3><span>Reader Notes</span><button class="tactile-btn surface" id="saveBookmarkBtn" style="padding:5px 11px;font-size:11px;">+ Save Page</button></h3>
@@ -209,7 +208,7 @@
     <div class="reader-topbar">
       <div class="reader-title-group">
         <button class="r-btn" id="readerPanicHandBtn">✋</button>
-        <span class="reader-book-title" id="readerHeaderTitle">Reader</span>
+        <span class="reader-book-title" id="readerHeaderTitle">Crimson Guild Chronicles</span>
       </div>
       <div class="reader-controls">
         <button class="r-btn active" id="mode2PageBtn">2-Page</button>
@@ -228,13 +227,13 @@
     <div class="reader-stage">
       <div class="spread-book" id="spreadBookContainer">
         <div class="spread-page" id="leftSpreadSlot"></div>
-        <div class="spread-page" id="rightSpreadSlot"></div>
+        <div class="spread-page" id="rightSpreadSlot" style="display: flex;"></div>
       </div>
       <div class="scroll-stage" id="scrollStageContainer"></div>
       <div class="reader-bottom-dock">
         <button class="r-btn" id="prevPageBtn">‹ Prev</button>
-        <input type="range" id="pageSlider" min="1" max="100" value="1" />
-        <span class="dock-page-label" id="readerPageIndicator">1 / 1</span>
+        <input type="range" id="pageSlider" min="1" max="4" value="1">
+        <span class="dock-page-label" id="readerPageIndicator">1–2 / 4</span>
         <button class="r-btn" id="nextPageBtn">Next ›</button>
       </div>
     </div>
@@ -244,9 +243,9 @@
     <div class="dialog-card">
       <h3 id="accessModalTitle">Private Access</h3>
       <p id="accessModalDesc">Enter passphrase.</p>
-      <input type="password" class="dialog-input" id="accessOldPass" placeholder="Current Primary Password..." autocomplete="off" style="display:none;" />
-      <input type="password" class="dialog-input" id="accessPass1" placeholder="Primary Password..." autocomplete="off" />
-      <input type="password" class="dialog-input" id="accessPass2" placeholder="Secondary Password (optional)..." autocomplete="off" style="display:none;" />
+      <input type="password" class="dialog-input" id="accessOldPass" placeholder="Current Primary Password..." autocomplete="off" style="display:none;">
+      <input type="password" class="dialog-input" id="accessPass1" placeholder="Primary Password..." autocomplete="off">
+      <input type="password" class="dialog-input" id="accessPass2" placeholder="Secondary Password (optional)..." autocomplete="off" style="display:none;">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap;">
         <button class="tactile-btn surface" id="directBinRestoreBtn" style="font-size:11px;padding:8px 12px;display:none;">📥 Restore .bin</button>
         <div style="display:flex;gap:8px;margin-left:auto;">
@@ -262,14 +261,14 @@
       <h3>Library Settings</h3>
       <p>Manage themes, shelf items, and offline APK export.</p>
       <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
-        <button class="tactile-btn primary" id="exportPwaZipBtn">📲 Export APK-Ready PWA Bundle (.zip)</button>
+        <button class="tactile-btn primary" id="exportPwaZipBtn">⏳ Packaging PWA...</button>
         <button class="tactile-btn surface" id="clearShelfBooksBtn">🗑️ Clear Books on Current Shelf</button>
         <div id="altControls" style="display:none;flex-direction:column;gap:10px;padding-top:10px;border-top:1px dashed var(--border);">
           <button class="tactile-btn btn-alt" id="changePassBtn">🔑 Update Passwords</button>
           <button class="tactile-btn primary" id="exportBinBtn">📦 Export Disguised .bin Backup</button>
           <button class="tactile-btn surface" id="importBinBtn">📥 Merge .bin Backup</button>
         </div>
-        <input type="file" id="binImportInput" accept=".bin,application/octet-stream" hidden />
+        <input type="file" id="binImportInput" accept=".bin,application/octet-stream" hidden="">
       </div>
       <div style="display:flex;justify-content:flex-end;"><button class="tactile-btn secondary" id="closeSettingsBtn">Done</button></div>
     </div>
@@ -279,7 +278,7 @@
     <div class="dialog-card">
       <h3>Decrypt .bin Backup</h3>
       <p>Enter the password used when this backup file was exported.</p>
-      <input type="password" class="dialog-input" id="restoreBinPassInput" placeholder="Backup Password..." autocomplete="off" />
+      <input type="password" class="dialog-input" id="restoreBinPassInput" placeholder="Backup Password..." autocomplete="off">
       <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:8px;">
         <button class="tactile-btn surface" id="cancelRestoreBinBtn">Cancel</button>
         <button class="tactile-btn secondary" id="confirmRestoreBinBtn">Restore Books</button>
@@ -1095,5 +1094,5 @@
       loadShelfBooks();
     });
   </script>
-</body>
-</html>
+
+<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script></body></html>
